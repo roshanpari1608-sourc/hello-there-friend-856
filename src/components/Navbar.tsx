@@ -50,6 +50,9 @@ export default function Navbar() {
             <Link to="/about" className="text-foreground hover:text-primary transition-colors">
               About
             </Link>
+            <Link to="/ai" className="text-foreground hover:text-primary transition-colors">
+              AI
+            </Link>
             {user && (
               <Link to="/dashboard" className="text-foreground hover:text-primary transition-colors">
                 Dashboard
@@ -104,6 +107,9 @@ export default function Navbar() {
             </Link>
             <Link to="/about" className="text-foreground hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
               About
+            </Link>
+            <Link to="/ai" className="text-foreground hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+              AI
             </Link>
             {user && (
               <Link to="/dashboard" className="text-foreground hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
